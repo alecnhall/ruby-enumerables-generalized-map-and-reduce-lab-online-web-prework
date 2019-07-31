@@ -7,3 +7,5 @@ def map(source_array)
   end
   yield new
 end
+
+map(source_array){|b| * 1}
