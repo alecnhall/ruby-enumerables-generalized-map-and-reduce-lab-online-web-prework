@@ -19,6 +19,7 @@ def reduce(source_array, starting_point = 0)
     sum = starting_point
   end
   while i < source_array.length do
+    binding.pry
     sum += yield source_array[i]
     i += 1
   end
