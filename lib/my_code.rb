@@ -1,4 +1,5 @@
 
+require "pry"
 def map(source_array)
   new = []
   i = 0
