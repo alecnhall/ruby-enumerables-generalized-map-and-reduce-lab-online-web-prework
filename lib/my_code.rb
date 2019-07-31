@@ -8,4 +8,4 @@ def map(source_array)
   return new
 end
 
-map(source_array){ |b| * -1}
+map(){ |b| * -1}
