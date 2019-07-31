@@ -9,7 +9,7 @@ def map(source_array)
   return new
 end
 
-def reduce_method(source_array, starting_point = 0)
+def reduce(source_array, starting_point = 0)
   i = 0
   sum = starting_point
   while i < source_array.length do
@@ -20,7 +20,7 @@ def reduce_method(source_array, starting_point = 0)
   return sum
 end
 
-def reduce(source_array)
+def reduce_true_false(source_array)
   i = 0
   while i < source_array.length do
     if source_array[i] == false
