@@ -8,6 +8,4 @@ def map(source_array)
   return new
 end
 
-map do |innards|
-  * -1
-end
+map {|innards| * -1}
