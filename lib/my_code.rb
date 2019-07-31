@@ -1,4 +1,4 @@
-
+array = [1, 2, 4, -9]
 def map(source_array)
   new = []
   i = 0
@@ -8,6 +8,8 @@ def map(source_array)
   end
   return new
 end
+
+map(array){ |b| b * -1}
 
 def reduce(source_array, starting_point = 0)
   i = 0
