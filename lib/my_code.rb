@@ -1,4 +1,4 @@
-array = [1, 2, 4, -9]
+
 def map(source_array)
   new = []
   i = 0
