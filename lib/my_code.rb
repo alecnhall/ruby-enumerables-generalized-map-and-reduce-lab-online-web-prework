@@ -14,30 +14,29 @@ def reduce(source_array, starting_point = 0)
   sum = starting_point
   while i < source_array.length do
     sum += source_array[i]
-    yield source_array[i]
     i += 1
   end
-  return sum
+  yield sum
 end
 
-def reduce_true_false(source_array)
-  i = 0
-  while i < source_array.length do
-    if source_array[i] == false
-      yield false
-    end
-    i += 1
-  end
-    yield true
-end
-
-def reduce_to_any_true(source_array)
-  i = 0
-  while i < source_array.length do
-    if source_array[i] == true
-      yield true
-    end
-    i += 1
-  end
-  yield false
-end
+# def reduce_true_false(source_array)
+#   i = 0
+#   while i < source_array.length do
+#     if source_array[i] == false
+#       yield false
+#     end
+#     i += 1
+#   end
+#     yield true
+# end
+#
+# def reduce_to_any_true(source_array)
+#   i = 0
+#   while i < source_array.length do
+#     if source_array[i] == true
+#       yield true
+#     end
+#     i += 1
+#   end
+#   yield false
+# end
