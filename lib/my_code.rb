@@ -22,10 +22,10 @@ end
 def reduce(source_array)
   i = 0
   while i < source_array.length do
-    if source_array[i] == false
-      return yield false
+    if yield source_array[i] == false
+      return false
     end
     i += 1
   end
-  return yield true
+  return true
 end
