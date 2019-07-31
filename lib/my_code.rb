@@ -8,4 +8,3 @@ def map(source_array)
   yield
   return new
 end
-
