@@ -13,10 +13,10 @@ def reduce_method(source_array, starting_point = 0)
   i = 0
   sum = starting_point
   while i < source_array.length do
-    sum += source_array[i]
+    sum += yield source_array[i]
     i += 1
   end
-  yield sum
+  return sum
 end
 
 def reduce(source_array)
