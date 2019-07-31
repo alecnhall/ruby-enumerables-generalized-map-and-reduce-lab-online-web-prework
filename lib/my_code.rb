@@ -11,12 +11,12 @@ end
 
 def reduce(source_array, starting_point = 0)
   i = 0
-  sum = yield starting_point
+  sum = starting_point
   while i < source_array.length do
     sum += yield source_array[i]
     i += 1
   end
-  return sum
+  yield sum
 end
 
 # def reduce_true_false(source_array)
