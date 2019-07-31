@@ -9,4 +9,5 @@ def map(source_array)
 end
 
 map(source_array)do |b|
-  *
+  * -1
+end
