@@ -1,3 +1,7 @@
 the block
 
 method_using_block {puts "hi"}
+
+method_using_block do
+  puts "hi"
+end
