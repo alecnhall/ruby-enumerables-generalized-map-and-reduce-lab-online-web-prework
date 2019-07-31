@@ -7,5 +7,3 @@ def map(source_array)
   end
   yield new
 end
-
-map{|b| * -1}
