@@ -1,5 +1,5 @@
 
-require "pry"
+
 def map(source_array)
   new = []
   i = 0
@@ -19,7 +19,6 @@ def reduce(source_array, starting_point = 0)
     sum = starting_point
   end
   while i < source_array.length do
-    binding.pry
     sum += yield(sum)source_array[i]
     i += 1
   end
