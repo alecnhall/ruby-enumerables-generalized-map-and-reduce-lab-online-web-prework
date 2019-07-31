@@ -13,7 +13,7 @@ def reduce(source_array, starting_point = 0)
   i = 0
   sum = starting_point
   while i < source_array.length do
-    sum += yield source_array[i]
+    yield sum += source_array[i]
     i += 1
   end
   return sum
@@ -22,7 +22,7 @@ end
 def reduce(source_array)
   i = 0
   while i < source_array.length do
-    if  source_array[i] == false
+    if source_array[i] == false
       yield false
     end
     i += 1
